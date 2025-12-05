@@ -1,0 +1,54 @@
+# Build outputs
+dist/
+out/
+build/
+*.tsbuildinfo
+generated/
+
+# Dependencies
+node_modules/
+
+# Cache
+.turbo/
+.cache/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+.nyc_output/
+test/
+tests/
+__tests__/
+*.spec.*
+*.test.*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temp & Scratchwork
+tmp/
+temp/
+*.tmp
+*.corrupted
+CLAUDE.md
+PRD.md
+CODE_REVIEW.md
+TESTING_PLAN.md
+SECURITY_AND_PERFORMANCE_FIXES.md
+DEVELOPER_EXPERIENCE_IMPROVEMENTS.md
+*_PLAN.md
+*_REVIEW.md
+*_FIXES.md
+*_IMPROVEMENTS.md

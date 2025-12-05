@@ -1,0 +1,72 @@
+{
+  "name": "@snapback/contracts",
+  "description": "Production-grade TypeScript types for code safety infrastructure - battle-tested contracts powering SnapBack's safety systems",
+  "version": "0.1.4",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marcelle-Labs/snapback.dev.git",
+    "directory": "packages-oss/contracts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node scripts/build.contracts.mjs",
+    "check": "biome check .",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --fix .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@asteasolutions/zod-to-openapi": "catalog:",
+    "nanoid": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "diff": "catalog:",
+    "dotenv": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./events": {
+      "types": "./dist/events/index.d.ts",
+      "import": "./dist/events/index.js",
+      "require": "./dist/events/index.cjs"
+    },
+    "./events/core": {
+      "types": "./dist/events/core.d.ts",
+      "import": "./dist/events/core.js",
+      "require": "./dist/events/core.cjs"
+    },
+    "./events/legacy": {
+      "types": "./dist/events/legacy.d.ts",
+      "import": "./dist/events/legacy.js",
+      "require": "./dist/events/legacy.cjs"
+    },
+    "./session": {
+      "types": "./dist/session.d.ts",
+      "import": "./dist/session.js",
+      "require": "./dist/session.cjs"
+    },
+    "./id-generator": {
+      "types": "./dist/id-generator.d.ts",
+      "import": "./dist/id-generator.js",
+      "require": "./dist/id-generator.cjs"
+    }
+  }
+}
